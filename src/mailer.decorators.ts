@@ -1,8 +1,6 @@
 import { Inject } from '@nestjs/common';
 import { getMailerConnectionToken } from './mailer.utils';
 
-export const InjectMailer = (connection?) => {
+export const InjectMailer = (connection?: string) => {
   return Inject(getMailerConnectionToken(connection));
 };
-
-export const InjectConnection = InjectMailer;

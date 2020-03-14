@@ -16,13 +16,10 @@ Integrates Nodemailer with Nest
 ## Installation
 
 ```bash
-npm install nestjs-mailer nodemailer
+npm install nestjs-mailer nodemailer @types/nodemailer handlebars
 ```
 
 ## Examples
-```bash
-npm install nestjs-mailer nodemailer handlebars
-```
 
 ### MailerModule.forRoot(options, connection?)
 
