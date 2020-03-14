@@ -57,7 +57,7 @@ import { AppController } from './app.controller';
     MailerModule.forRootAsync({
       useFactory: () => ({
         config: {
-          transport: 'smtp://login:password@smtp.mailtrap.io'
+          transport: 'smtp://login:password@smtp.mailtrap.io',
         },
       }),
     }),

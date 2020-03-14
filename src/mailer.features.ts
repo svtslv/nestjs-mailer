@@ -14,8 +14,6 @@ export function template(path: string, context: object) {
   return handlebars.compile(template)(context);
 }
 
-console.log(template('test/template.hbs', { data: 'test' }));
-
 // import * as fs from 'fs';
 
 // const templates: any = {};
