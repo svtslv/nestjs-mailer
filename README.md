@@ -83,9 +83,9 @@ export class AppController {
   async getHello() {
     this.mailer.sendMail({
       from: '"Sviatoslav" <sviatoslav@example.com>',
-      to: "john@example.com",
-      subject: "Hello ✔",
-      text: "Hello John",
+      to: 'john@example.com',
+      subject: 'Hello ✔',
+      text: 'Hello John',
       html: template('src/mailer/hello.hbs', { name: 'John' })
     }).catch(e => console.log(e));
   }
