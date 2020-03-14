@@ -13,7 +13,7 @@ export function template(path: string, context: object) {
 
   if(!handlebars) {
     try {
-      handlebars = require('handlebars1');
+      handlebars = require('handlebars');
     } catch(e) {
       console.error('Cannot find module handlebars. To use this feature you must install it `npm install handlebars`');
       return null;
