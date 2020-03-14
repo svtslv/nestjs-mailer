@@ -1,6 +1,6 @@
 {
   "name": "nestjs-mailer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Nest - modern, fast, powerful node.js web framework (@mailer)",
   "author": "Sviatoslav H",
   "license": "MIT",
@@ -61,10 +61,5 @@
     "ts-node": "^8.6.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@types/jest": "^25.1.4",
-    "save": "^2.4.0",
-    "ts-jest": "^25.2.1"
   }
 }
