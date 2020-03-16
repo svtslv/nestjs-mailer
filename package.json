@@ -1,6 +1,6 @@
 {
   "name": "nestjs-mailer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@mailer)",
   "author": "Sviatoslav H",
   "license": "MIT",
@@ -34,7 +34,9 @@
   "peerDependencies": {
     "@nestjs/common": ">=6.7.0",
     "@nestjs/core": ">=6.7.0",
-    "nodemailer": ">=6.0.0",
+    "nodemailer": ">=6.0.0"
+  },
+  "optionalDependencies": {
     "handlebars": ">=4.0.0"
   },
   "devDependencies": {
