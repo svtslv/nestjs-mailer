@@ -23,6 +23,8 @@ npm install nestjs-mailer nodemailer handlebars
 npm install -D @types/nodemailer
 ```
 
+Hint: handlebars is an optional dependency, if you want to use the template helper, you must install it.
+
 ## Examples
 
 ### MailerModule.forRoot(options, connection?)

@@ -1,6 +1,6 @@
 {
   "name": "nestjs-mailer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Nest - modern, fast, powerful node.js web framework (@mailer)",
   "author": "Sviatoslav H",
   "license": "MIT",
