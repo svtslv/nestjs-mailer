@@ -15,15 +15,21 @@ Integrates Nodemailer with Nest
 
 ## Installation
 
-```bash
+```sh
 npm install nestjs-mailer nodemailer handlebars
 ```
 
-```bash
+Hint: handlebars is an optional dependency, if you want to use the template helper, you must install it.
+
+```sh
 npm install -D @types/nodemailer
 ```
 
-Hint: handlebars is an optional dependency, if you want to use the template helper, you must install it.
+You can also use interactive CLI
+
+```sh
+npx nestjs-modules
+```
 
 ## Examples
 
@@ -39,6 +45,18 @@ import { AppController } from './app.controller';
     MailerModule.forRoot({
       config: {
         transport: 'smtp://login:password@smtp.mailtrap.io',
+        // transport: {
+        //   host: 'smtp.mailtrap.io',
+        //   port: 587,
+        //   secure: false,
+        //   auth: {
+        //     user: 'login',
+        //     pass: 'password',
+        //   }
+        // },
+        // defaults: {
+        //   from: '"Sviatoslav" <sviatoslav@example.com>',
+        // },
       },
     }),
   ],
@@ -60,6 +78,18 @@ import { AppController } from './app.controller';
       useFactory: () => ({
         config: {
           transport: 'smtp://login:password@smtp.mailtrap.io',
+          // transport: {
+          //   host: 'smtp.mailtrap.io',
+          //   port: 587,
+          //   secure: false,
+          //   auth: {
+          //     user: 'login',
+          //     pass: 'password',
+          //   }
+          // },
+          // defaults: {
+          //   from: '"Sviatoslav" <sviatoslav@example.com>',
+          // },
         },
       }),
     }),
