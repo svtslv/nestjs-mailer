@@ -25,7 +25,7 @@ Hint: handlebars is an optional dependency, if you want to use the template help
 npm install -D @types/nodemailer
 ```
 
-You can also use interactive CLI
+You can also use the interactive CLI
 
 ```sh
 npx nestjs-modules
